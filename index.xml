@@ -1,86 +1,90 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Paper</title>
-    <link>https://hugo-paper.vercel.app/</link>
-    <description>Recent content on Paper</description>
+    <title>My cool new Blog</title>
+    <link>https://example.com/</link>
+    <description>Recent content on My cool new Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hugo-paper.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Dec 2021 10:45:44 +0200</lastBuildDate>
+    
+        <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title></title>
-      <link>https://hugo-paper.vercel.app/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      <link>https://example.com/status/bilberry-theme-released/</link>
+      <pubDate>Wed, 15 Dec 2021 10:45:44 +0200</pubDate>
       
-      <guid>https://hugo-paper.vercel.app/archives/</guid>
-      <description></description>
+      <guid>https://example.com/status/bilberry-theme-released/</guid>
+      <description>I&amp;rsquo;m glad to announce the release of the Bilberry Hugo theme. This premium theme is published under an open-source license (MIT), and you can use it free of charge. It took me a significant amount of time to create and refine this theme. This theme is a collaborative effort of numerous volunteers.</description>
     </item>
     
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://hugo-paper.vercel.app/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Support and Discussions</title>
+      <link>https://example.com/article/support-and-discussions/</link>
+      <pubDate>Mon, 01 Nov 2021 18:10:14 +0100</pubDate>
       
-      <guid>https://hugo-paper.vercel.app/post/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      <guid>https://example.com/article/support-and-discussions/</guid>
+      <description>Support for this theme is provided through the Issues and Discussions sections of the project. Please use the Issues section if you would like to report a defect or bug. For any other requests, use the Discussions section.
+Please use the following guidelines if you want to start a discussion:
+For any questions regarding a specific feature, or if you need help using or customizing the theme, use the Questions &amp;amp; Answers (Q&amp;amp;A) category.</description>
     </item>
     
     <item>
-      <title>Rich Content</title>
-      <link>https://hugo-paper.vercel.app/post/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>My Trip to Scotland</title>
+      <link>https://example.com/gallery/my-trip-to-scotland/</link>
+      <pubDate>Mon, 01 Nov 2021 18:01:26 +0100</pubDate>
       
-      <guid>https://hugo-paper.vercel.app/post/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
-&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;</description>
+      <guid>https://example.com/gallery/my-trip-to-scotland/</guid>
+      <description>In June 2017 I&amp;rsquo;ve visited Scotland with my best friend for two weeks. We drove a lot through the beautiful countryside and saw a lot of different animals: cattle, deer, birds, dolphins, and sheep. Sheep everywhere!
+At one beautiful camping site, we saw cattle in fog in the very early morning and took a picture of it. The image now has the title &amp;ldquo;Rindviecher im Nebel&amp;rdquo;, a quite funny German phrase that means cattle in the fog.</description>
     </item>
     
     <item>
-      <title>Placeholder Text</title>
-      <link>https://hugo-paper.vercel.app/post/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Kilez More - Life And Death Of The Hegemony</title>
+      <link>https://example.com/video/kilez-more-leben-und-tod-des-imperialismus/</link>
+      <pubDate>Mon, 01 Nov 2021 16:23:40 +0100</pubDate>
       
-      <guid>https://hugo-paper.vercel.app/post/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+      <guid>https://example.com/video/kilez-more-leben-und-tod-des-imperialismus/</guid>
+      <description>&lt;p&gt;Kilez More is a great Austrian musician.
+Most of his songs have a political background and have amazing lyrics!&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Math Typesetting</title>
-      <link>https://hugo-paper.vercel.app/post/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Kilez More - New World Order</title>
+      <link>https://example.com/audio/kilez-more-new-world-order/</link>
+      <pubDate>Mon, 01 Nov 2021 16:12:47 +0100</pubDate>
       
-      <guid>https://hugo-paper.vercel.app/post/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+      <guid>https://example.com/audio/kilez-more-new-world-order/</guid>
+      <description>With the audio post type you can easily integrate a Spotify, SoundCloud, TuneIn or Mixcloud player to your post.
+If you don&amp;rsquo;t want to embed sound but use a header image you can set it with the featuredImage option in your markdown file.</description>
     </item>
     
     <item>
-      <title>Emoji Support</title>
-      <link>https://hugo-paper.vercel.app/post/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Duckduckgo.com</title>
+      <link>https://example.com/link/duckduckgo/</link>
+      <pubDate>Mon, 01 Nov 2021 13:05:27 +0100</pubDate>
       
-      <guid>https://hugo-paper.vercel.app/post/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+      <guid>https://example.com/link/duckduckgo/</guid>
+      <description>A search engine that respects your privacy.</description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://hugo-paper.vercel.app/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <title>Edward Snowden About Privacy</title>
+      <link>https://example.com/quote/edward-snowden-privacy/</link>
+      <pubDate>Mon, 01 Nov 2021 13:01:14 +0100</pubDate>
       
-      <guid>https://hugo-paper.vercel.app/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
-https://github.com/yuin/goldmark https://github.</description>
+      <guid>https://example.com/quote/edward-snowden-privacy/</guid>
+      <description>Arguing that you don&amp;rsquo;t care about the right to privacy because you have nothing to hide is no different than saying you don&amp;rsquo;t care about free speech because you have nothing to say.</description>
     </item>
     
     <item>
-      <title>Contact</title>
-      <link>https://hugo-paper.vercel.app/contact/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <title>Installing Bilberry Theme</title>
+      <link>https://example.com/code/installing-bilberry-theme/</link>
+      <pubDate>Mon, 01 Nov 2021 09:31:27 +0100</pubDate>
       
-      <guid>https://hugo-paper.vercel.app/contact/</guid>
-      <description> github.com/nanxiaobei lee.so </description>
+      <guid>https://example.com/code/installing-bilberry-theme/</guid>
+      <description>&lt;p&gt;You will find all information to setup this theme with your hugo site
+on the official &lt;!-- raw HTML omitted --&gt; &lt;a href=&#34;https://github.com/Lednerb/bilberry-hugo-theme&#34;&gt;Github Repository&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>
