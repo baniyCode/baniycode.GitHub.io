@@ -2,433 +2,433 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/status/bilberry-theme-released/</loc>
+    <loc>https://baniycode.github.io/status/bilberry-theme-released/</loc>
     <lastmod>2021-12-15T10:45:44+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/status/bilberry-theme-released/"
+                href="https://baniycode.github.io/de/status/bilberry-theme-released/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/status/bilberry-theme-released/"
+                href="https://baniycode.github.io/status/bilberry-theme-released/"
                 />
   </url><url>
-    <loc>https://example.com/</loc>
+    <loc>https://baniycode.github.io/</loc>
     <lastmod>2021-12-15T10:45:44+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/"
+                href="https://baniycode.github.io/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/"
+                href="https://baniycode.github.io/"
                 />
   </url><url>
-    <loc>https://example.com/status/</loc>
+    <loc>https://baniycode.github.io/status/</loc>
     <lastmod>2021-12-15T10:45:44+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/status/"
+                href="https://baniycode.github.io/de/status/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/status/"
+                href="https://baniycode.github.io/status/"
                 />
   </url><url>
-    <loc>https://example.com/article/</loc>
+    <loc>https://baniycode.github.io/article/</loc>
     <lastmod>2021-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/article/"
+                href="https://baniycode.github.io/de/article/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/article/"
+                href="https://baniycode.github.io/article/"
                 />
   </url><url>
-    <loc>https://example.com/author/</loc>
+    <loc>https://baniycode.github.io/author/</loc>
     <lastmod>2021-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/author/"
+                href="https://baniycode.github.io/de/author/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/author/"
+                href="https://baniycode.github.io/author/"
                 />
   </url><url>
-    <loc>https://example.com/tags/discussions/</loc>
+    <loc>https://baniycode.github.io/tags/discussions/</loc>
     <lastmod>2021-11-01T18:10:14+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/ideas/</loc>
+    <loc>https://baniycode.github.io/tags/ideas/</loc>
     <lastmod>2021-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/ideas/"
+                href="https://baniycode.github.io/de/tags/ideas/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/ideas/"
+                href="https://baniycode.github.io/tags/ideas/"
                 />
   </url><url>
-    <loc>https://example.com/author/lednerb/</loc>
+    <loc>https://baniycode.github.io/author/lednerb/</loc>
     <lastmod>2021-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/author/lednerb/"
+                href="https://baniycode.github.io/de/author/lednerb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/author/lednerb/"
+                href="https://baniycode.github.io/author/lednerb/"
                 />
   </url><url>
-    <loc>https://example.com/tags/qa/</loc>
+    <loc>https://baniycode.github.io/tags/qa/</loc>
     <lastmod>2021-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/qa/"
+                href="https://baniycode.github.io/de/tags/qa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/qa/"
+                href="https://baniycode.github.io/tags/qa/"
                 />
   </url><url>
-    <loc>https://example.com/tags/show-and-tell/</loc>
+    <loc>https://baniycode.github.io/tags/show-and-tell/</loc>
     <lastmod>2021-11-01T18:10:14+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/support/</loc>
-    <lastmod>2021-11-01T18:10:14+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://example.com/de/tags/support/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/tags/support/"
-                />
-  </url><url>
-    <loc>https://example.com/article/support-and-discussions/</loc>
+    <loc>https://baniycode.github.io/tags/support/</loc>
     <lastmod>2021-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/article/support-and-discussions/"
+                href="https://baniycode.github.io/de/tags/support/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/article/support-and-discussions/"
+                href="https://baniycode.github.io/tags/support/"
                 />
   </url><url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://baniycode.github.io/article/support-and-discussions/</loc>
     <lastmod>2021-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/"
+                href="https://baniycode.github.io/de/article/support-and-discussions/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/"
+                href="https://baniycode.github.io/article/support-and-discussions/"
                 />
   </url><url>
-    <loc>https://example.com/gallery/</loc>
+    <loc>https://baniycode.github.io/tags/</loc>
+    <lastmod>2021-11-01T18:10:14+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://baniycode.github.io/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baniycode.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://baniycode.github.io/gallery/</loc>
     <lastmod>2021-11-01T18:01:26+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/gallery/"
+                href="https://baniycode.github.io/de/gallery/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/gallery/"
+                href="https://baniycode.github.io/gallery/"
                 />
   </url><url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://baniycode.github.io/categories/</loc>
     <lastmod>2021-11-01T18:01:26+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/categories/"
+                href="https://baniycode.github.io/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/"
+                href="https://baniycode.github.io/categories/"
                 />
   </url><url>
-    <loc>https://example.com/tags/eilean-donan-castle/</loc>
+    <loc>https://baniycode.github.io/tags/eilean-donan-castle/</loc>
     <lastmod>2021-11-01T18:01:26+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/eilean-donan-castle/"
+                href="https://baniycode.github.io/de/tags/eilean-donan-castle/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/eilean-donan-castle/"
+                href="https://baniycode.github.io/tags/eilean-donan-castle/"
                 />
   </url><url>
-    <loc>https://example.com/tags/glennfinnan-viaduct/</loc>
+    <loc>https://baniycode.github.io/tags/glennfinnan-viaduct/</loc>
     <lastmod>2021-11-01T18:01:26+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/holidays/</loc>
+    <loc>https://baniycode.github.io/categories/holidays/</loc>
     <lastmod>2021-11-01T18:01:26+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/gallery/my-trip-to-scotland/</loc>
+    <loc>https://baniycode.github.io/gallery/my-trip-to-scotland/</loc>
     <lastmod>2021-11-01T18:01:26+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/gallery/my-trip-to-scotland/"
+                href="https://baniycode.github.io/de/gallery/my-trip-to-scotland/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/gallery/my-trip-to-scotland/"
+                href="https://baniycode.github.io/gallery/my-trip-to-scotland/"
                 />
   </url><url>
-    <loc>https://example.com/tags/scotland/</loc>
+    <loc>https://baniycode.github.io/tags/scotland/</loc>
     <lastmod>2021-11-01T18:01:26+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/travelling/</loc>
+    <loc>https://baniycode.github.io/categories/travelling/</loc>
     <lastmod>2021-11-01T18:01:26+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/kilez-more/</loc>
+    <loc>https://baniycode.github.io/tags/kilez-more/</loc>
     <lastmod>2021-11-01T16:23:40+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/kilez-more/"
+                href="https://baniycode.github.io/de/tags/kilez-more/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/kilez-more/"
+                href="https://baniycode.github.io/tags/kilez-more/"
                 />
   </url><url>
-    <loc>https://example.com/video/kilez-more-leben-und-tod-des-imperialismus/</loc>
+    <loc>https://baniycode.github.io/video/kilez-more-leben-und-tod-des-imperialismus/</loc>
     <lastmod>2021-11-01T16:23:40+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/video/kilez-more-leben-und-tod-des-imperialismus/"
+                href="https://baniycode.github.io/de/video/kilez-more-leben-und-tod-des-imperialismus/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/video/kilez-more-leben-und-tod-des-imperialismus/"
+                href="https://baniycode.github.io/video/kilez-more-leben-und-tod-des-imperialismus/"
                 />
   </url><url>
-    <loc>https://example.com/categories/music/</loc>
+    <loc>https://baniycode.github.io/categories/music/</loc>
     <lastmod>2021-11-01T16:23:40+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/politics/</loc>
+    <loc>https://baniycode.github.io/categories/politics/</loc>
     <lastmod>2021-11-01T16:23:40+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/video/</loc>
+    <loc>https://baniycode.github.io/categories/video/</loc>
     <lastmod>2021-11-01T16:23:40+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/categories/video/"
+                href="https://baniycode.github.io/de/categories/video/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/video/"
+                href="https://baniycode.github.io/categories/video/"
                 />
   </url><url>
-    <loc>https://example.com/video/</loc>
+    <loc>https://baniycode.github.io/video/</loc>
     <lastmod>2021-11-01T16:23:40+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/video/"
+                href="https://baniycode.github.io/de/video/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/video/"
+                href="https://baniycode.github.io/video/"
                 />
   </url><url>
-    <loc>https://example.com/audio/</loc>
+    <loc>https://baniycode.github.io/audio/</loc>
     <lastmod>2021-11-01T16:12:47+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/audio/"
+                href="https://baniycode.github.io/de/audio/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/audio/"
+                href="https://baniycode.github.io/audio/"
                 />
   </url><url>
-    <loc>https://example.com/audio/kilez-more-new-world-order/</loc>
+    <loc>https://baniycode.github.io/audio/kilez-more-new-world-order/</loc>
     <lastmod>2021-11-01T16:12:47+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/audio/kilez-more-new-world-order/"
+                href="https://baniycode.github.io/de/audio/kilez-more-new-world-order/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/audio/kilez-more-new-world-order/"
+                href="https://baniycode.github.io/audio/kilez-more-new-world-order/"
                 />
   </url><url>
-    <loc>https://example.com/tags/truth-rap/</loc>
+    <loc>https://baniycode.github.io/tags/truth-rap/</loc>
     <lastmod>2021-11-01T16:12:47+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/truth-rap/"
+                href="https://baniycode.github.io/de/tags/truth-rap/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/truth-rap/"
+                href="https://baniycode.github.io/tags/truth-rap/"
                 />
   </url><url>
-    <loc>https://example.com/page/about-bilberry/</loc>
+    <loc>https://baniycode.github.io/page/about-bilberry/</loc>
     <lastmod>2021-11-01T13:18:45+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/page/about-bilberry/"
+                href="https://baniycode.github.io/de/page/about-bilberry/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/page/about-bilberry/"
+                href="https://baniycode.github.io/page/about-bilberry/"
                 />
   </url><url>
-    <loc>https://example.com/page/</loc>
+    <loc>https://baniycode.github.io/page/</loc>
     <lastmod>2021-11-01T13:18:45+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/page/"
+                href="https://baniycode.github.io/de/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/page/"
+                href="https://baniycode.github.io/page/"
                 />
   </url><url>
-    <loc>https://example.com/page/github/</loc>
+    <loc>https://baniycode.github.io/page/github/</loc>
     <lastmod>2021-11-01T13:17:56+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/page/github/"
+                href="https://baniycode.github.io/de/page/github/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/page/github/"
+                href="https://baniycode.github.io/page/github/"
                 />
   </url><url>
-    <loc>https://example.com/link/duckduckgo/</loc>
+    <loc>https://baniycode.github.io/link/duckduckgo/</loc>
     <lastmod>2021-11-01T13:05:27+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/link/</loc>
+    <loc>https://baniycode.github.io/link/</loc>
     <lastmod>2021-11-01T13:05:27+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/privacy/</loc>
+    <loc>https://baniycode.github.io/categories/privacy/</loc>
     <lastmod>2021-11-01T13:05:27+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/search-engine/</loc>
+    <loc>https://baniycode.github.io/tags/search-engine/</loc>
     <lastmod>2021-11-01T13:05:27+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/author/edward-snowden/</loc>
+    <loc>https://baniycode.github.io/author/edward-snowden/</loc>
     <lastmod>2021-11-01T13:01:14+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/quote/edward-snowden-privacy/</loc>
+    <loc>https://baniycode.github.io/quote/edward-snowden-privacy/</loc>
     <lastmod>2021-11-01T13:01:14+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/free-speech/</loc>
+    <loc>https://baniycode.github.io/tags/free-speech/</loc>
     <lastmod>2021-11-01T13:01:14+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/quote/</loc>
+    <loc>https://baniycode.github.io/quote/</loc>
     <lastmod>2021-11-01T13:01:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/quote/"
+                href="https://baniycode.github.io/de/quote/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/quote/"
+                href="https://baniycode.github.io/quote/"
                 />
   </url><url>
-    <loc>https://example.com/categories/society/</loc>
+    <loc>https://baniycode.github.io/categories/society/</loc>
     <lastmod>2021-11-01T13:01:14+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/bilberry-theme/</loc>
+    <loc>https://baniycode.github.io/tags/bilberry-theme/</loc>
     <lastmod>2021-11-01T09:31:27+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/code/</loc>
+    <loc>https://baniycode.github.io/categories/code/</loc>
     <lastmod>2021-11-01T09:31:27+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/code/</loc>
+    <loc>https://baniycode.github.io/code/</loc>
     <lastmod>2021-11-01T09:31:27+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/hugo/</loc>
+    <loc>https://baniycode.github.io/tags/hugo/</loc>
     <lastmod>2021-11-01T09:31:27+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/code/installing-bilberry-theme/</loc>
+    <loc>https://baniycode.github.io/code/installing-bilberry-theme/</loc>
     <lastmod>2021-11-01T09:31:27+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/tutorials/</loc>
+    <loc>https://baniycode.github.io/categories/tutorials/</loc>
     <lastmod>2021-11-01T09:31:27+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/archive/</loc>
+    <loc>https://baniycode.github.io/archive/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/archive/"
+                href="https://baniycode.github.io/de/archive/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/archive/"
+                href="https://baniycode.github.io/archive/"
                 />
   </url><url>
-    <loc>https://example.com/series/</loc>
+    <loc>https://baniycode.github.io/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/series/"
+                href="https://baniycode.github.io/de/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/series/"
+                href="https://baniycode.github.io/series/"
                 />
   </url>
 </urlset>
