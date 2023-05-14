@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+
+  
+<html itemscope itemtype="https://schema.org/WebPage" class="no-js" lang="cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://baniycai.github.io/">
+    <meta name="author" content="Baniy Cai">
+    <meta name="description" content="Blog of Baniy Cai">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.105.0">
+    <title>
+        
+           
+               MakeFile intro &vert; Baniy Cai
+           
+        
+    </title>
+    <meta itemprop="name" content="MakeFile intro">
+    <meta itemprop="description" content="MakeFile intro - Blog of Baniy Cai">
+    <meta property="og:site_name" content="Baniy Cai">
+
+    <meta property="og:title" content="MakeFile intro" />
+<meta property="og:description" content="Makefile 规则
+在程序编译过程中，Makefile的主要作用就是：构建生成可执行文件的依赖关系树。一个可执行文件需要哪些源文件、哪些库，我们都可以在Makefile里指定。在程序编译阶段，make工具会首先解析这个Makefile，根据Makefile里的指定，构建出编译可执行文件所需要的完整依赖关系。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://baniycai.github.io/article/makefile_intro/" /><meta property="article:section" content="article" />
+<meta property="article:published_time" content="2023-05-14T21:15:40+08:00" />
+<meta property="article:modified_time" content="2023-05-14T21:15:40+08:00" />
+
+
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+
+
+    
+    <link rel="canonical" href="https://baniycai.github.io/article/makefile_intro/">
+    
+
+    <link rel="stylesheet" href="https://baniycai.github.io/theme.css">
+
+    
+
+    
+        
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+    
+
+    
+    <nav class="permanentTopNav sticky">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/" target="">Home</a></li>
+                
+            
+                
+                    <li><a href="/categories" target="">Categories</a></li>
+                
+            
+                
+                    <li><a href="/archive/" target="">Archive</a></li>
+                
+            
+                
+                    <li><a href="https://baniycai.github.io/page/about/">About</a></li>
+                
+            
+                
+                    <li><a href="https://github.com/baniycai/" target="_blank">Github</a></li>
+                
+            
+        </ul>
+
+        
+            <div id="search-box" class="search">
+                <i class="fas fa-search"></i>
+                <input id="search" type="text" placeholder="Search ...">
+            </div>
+        
+    </div>
+</nav>
+
+
+    
+    <header class="sticky">
+
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo">
+                
+                    
+                    
+                        
+                    
+                    <img src="https://seccdn.libravatar.org/avatar/87522108b277500e11a4a5aa3d8c6c58?d=mm&size=200" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+                <a href="/">
+                    Baniy Cai
+                </a>
+            </h3>
+
+            
+                <span class="subtitle">Welcome! This is the blog of baniy.</span>
+            
+        </div>
+
+        
+
+        
+            <div class="toggler permanentTopNav">
+        
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+    </div>
+</header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://baniycai.github.io/article/makefile_intro/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://baniycai.github.io/article/makefile_intro/">
+            MakeFile intro
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2023-05-14</span>
+            
+        
+
+        
+            
+                <span class="readingTime">1 min read</span>
+            
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://baniycai.github.io/categories/tool/">tool</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#makefile-规则">Makefile 规则</a>
+          <ul>
+            <li><a href="#规则">规则</a></li>
+            <li><a href="#默认目标">默认目标</a></li>
+            <li><a href="#多目标">多目标</a></li>
+            <li><a href="#多规则目标">多规则目标</a></li>
+            <li><a href="#伪目标">伪目标</a></li>
+          </ul>
+        </li>
+        <li><a href="#目标依赖">目标依赖</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+
+        <h3 id="makefile-规则">Makefile 规则</h3>
+<p>在程序编译过程中，<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>的主要作用就是：构建生成可执行文件的依赖关系树。<strong>一个可执行文件需要哪些源文件、哪些库，我们都可以在<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>里指定</strong>。在程序编译阶段，make工具会首先解析这个<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>，根据<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>里的指定，构建出编译可执行文件所需要的完整依赖关系。</p>
+<p>根据这个依赖关系，make工具接下来就可以分别去编译需要的文件；通过时间戳，可以动态识别哪些是新添加的文件，哪些是已经编译过的文件，哪些文件做了新的修改，这样就不用每次都重新编译了，只编译那些新修改或新添加的源文件就可以了，大大提升了编译的效率。</p>
+<p>那<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>是如何构建可执行文件编译所依赖的关系树的呢？很简单，通过规则。</p>
+<h4 id="规则">规则</h4>
+<p>规则是<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>的基本组成单元。<strong>一个规则通常由目标、目标依赖和命令三部分构成</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">目标：目标依赖</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">命令</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">a.out</span><span style="color:#f92672">:</span> hello.c
+</span></span><span style="display:flex;"><span>    gcc -o a.out hello.c
+</span></span></code></pre></div><p>如上所示，a.out就是我们要生成的目标，<strong>目标一般是一个可执行文件。目标依赖是指生成这个可执行文件所依赖的源文件，如 hello.c。而命令则是如何将这些目标依赖生成对应的目标</strong>，一般是gcc命令、链接命令、objcopy命令，一些<a href="https://www.zhaixue.cc/shell/shell-intro.html">shell</a>命令等。命令必须使用tab键进行缩进，否则<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>就会报错。</p>
+<p>一个规则中的三个部分并不是都必须要有的。<strong>一个<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>文件中可能包含多个规则，有的规则可能无目标依赖，仅仅是为了实现某种操作。如下面的clean命令</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">clean</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    rm -f a.out hello.o
+</span></span></code></pre></div><p><strong>当我们使用make clean命令清理编译的文件时，会调用这个规则中的命令，不需要什么依赖，仅仅是执行删除操作，所以这个规则中并没有目标依赖</strong>。</p>
+<p>当然，一个规则中也可以没有命令，仅仅包含目标和目标依赖，仅仅用来描述一种依赖关系。但一个规则中一定要有一个目标。</p>
+<h4 id="默认目标">默认目标</h4>
+<p>一个<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>文件里通常会有多个目标，<strong>一般会选择第一个作为默认目标</strong>。正常情况下，当你想编译生成a.out时，要使用make a.out命令，但为什么直接使用make，没有指定参数，也能生成a.out的呢？这是因为在上面的<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>文件中，a.out是文件中的第一个目标，当我们在make编译时没有给make指定要生成的目标，make就会选择<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>文件中的第一个目标作为默认目标。</p>
+<h4 id="多目标">多目标</h4>
+<p>一个规则中也可以有多个目标，多个目标具有相同的生成命令和依赖文件。如一个目标文件%.o都是由其对应的源文件%.c编译生成的，生成命令也是相同的：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">%.o</span><span style="color:#f92672">:</span> %.c
+</span></span><span style="display:flex;"><span>    gcc -o %.o %.c
+</span></span></code></pre></div><h4 id="多规则目标">多规则目标</h4>
+<p>多个规则可能是同一个目标，make在解析<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>文件时，会将具有相同目标的规则的依赖文件合并。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">a.out</span><span style="color:#f92672">:</span> hello.c
+</span></span><span style="display:flex;"><span>    gcc -o a.out hello.c
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">a.out</span><span style="color:#f92672">:</span> module.c
+</span></span></code></pre></div><p>Make在解析<a href="https://www.zhaixue.cc/makefile/makefile-intro.html">Makefile</a>构建依赖关系树时，会将这两个规则合并为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">a.out</span><span style="color:#f92672">:</span> hello.c module.c
+</span></span><span style="display:flex;"><span>    gcc -o a.out hello.c other.c
+</span></span></code></pre></div><h4 id="伪目标">伪目标</h4>
+<p>有时候我们设置一个目标，并不是真正生成这个文件，如上面的clean目标，而是仅仅为了执行某个操作。当我们执行make clean时，clean这个目标并没有生成对应的目标文件clean，因此，clean也可以设置为伪目标。伪目标并不是一个真正的文件，可以看做是一个标签。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> clean
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">a.out</span><span style="color:#f92672">:</span> hello.o
+</span></span><span style="display:flex;"><span>    gcc -o a.out hello.o
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hello.o</span><span style="color:#f92672">:</span> hello.c
+</span></span><span style="display:flex;"><span>    gcc -c -o hello.o hello.c
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">clean</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    rm -f a.out hello.o
+</span></span></code></pre></div><p>伪目标一般没有依赖关系，也不会生成对应的目标文件，可以无条件执行，纯粹是为了执行某一个命令，如clean执行清理工作。</p>
+<h3 id="目标依赖">目标依赖</h3>
+<p>make第一次编译某个项目时，会依次编译所有的源文件。但是当我们修改程序后，再次使用make编译，make并不会重新编译整个源文件，而是只编译你新添加或修改了的源文件，那make是如何做到的呢？</p>
+<p>很简单，make是根据时间戳来判断一个规则中的目标依赖文件是否有更新。<strong>make在编译程序时，会依次检查依赖关系树中的所有源文件的时间戳，如果发现某个文件的时间戳有更新，会认为这个文件有改动过，会重新编译这个源文件。如果发现文件的时间戳没有更新，就不会再重新编译一次</strong>。</p>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+            
+
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://baniycai.github.io/article/makefile_intro/">MakeFile intro</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://baniycai.github.io/article/support-and-discussions/">Support and Discussions</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://baniycai.github.io/gallery/my-trip-to-scotland/">My Trip to Scotland</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://baniycai.github.io/video/kilez-more-leben-und-tod-des-imperialismus/">Kilez More - Life And Death Of The Hegemony</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://baniycai.github.io/audio/kilez-more-new-world-order/">Kilez More - New World Order</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://baniycai.github.io/code/installing-bilberry-theme/">Installing Bilberry Theme</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            
+            <a href="https://baniycai.github.io/categories/"><strong>Categories</strong></a>
+            
+
+            <ul>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/music/">Music (2)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/privacy/">Privacy (2)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/code/">Code (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/holidays/">Holidays (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/politics/">Politics (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/society/">Society (1)</a>
+                
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+                
+                <a href="" target="_blank" rel="me"><em class="fab fa-twitter"></em></a>
+                
+                <a href="https://github.com/baniycai/" target="_blank" rel=""><em class="fab fa-github"></em></a>
+                
+            </div>
+            
+
+            
+
+            
+            <div class="archive">
+                
+                <a href="https://baniycai.github.io/archive/"><strong>Archive</strong></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+    
+
+    
+    <script src="https://baniycai.github.io/theme.js"></script>
+    
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="AM9TETHNHE">
+  <input type="hidden" id="algolia-search-apiKey" value="afc71dae381644b127579526c553c888">
+  <input type="hidden" id="algolia-search-indexName" value="blog_index">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+</div>
+
+    
+
+    
+</body>
+
+</html>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on Baniy Cai</title>
-    <link>https://baniycai.github.io/article/</link>
-    <description>Recent content in Articles on Baniy Cai</description>
+    <title>tool on Baniy Cai</title>
+    <link>https://baniycai.github.io/categories/tool/</link>
+    <description>Recent content in tool on Baniy Cai</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 14 May 2023 21:15:40 +0800</lastBuildDate><atom:link href="https://baniycai.github.io/article/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 May 2023 21:15:40 +0800</lastBuildDate><atom:link href="https://baniycai.github.io/categories/tool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MakeFile intro</title>
       <link>https://baniycai.github.io/article/makefile_intro/</link>
@@ -14,17 +14,6 @@
       <guid>https://baniycai.github.io/article/makefile_intro/</guid>
       <description>&lt;h3 id=&#34;makefile-规则&#34;&gt;Makefile 规则&lt;/h3&gt;
 &lt;p&gt;在程序编译过程中，&lt;a href=&#34;https://www.zhaixue.cc/makefile/makefile-intro.html&#34;&gt;Makefile&lt;/a&gt;的主要作用就是：构建生成可执行文件的依赖关系树。&lt;strong&gt;一个可执行文件需要哪些源文件、哪些库，我们都可以在&lt;a href=&#34;https://www.zhaixue.cc/makefile/makefile-intro.html&#34;&gt;Makefile&lt;/a&gt;里指定&lt;/strong&gt;。在程序编译阶段，make工具会首先解析这个&lt;a href=&#34;https://www.zhaixue.cc/makefile/makefile-intro.html&#34;&gt;Makefile&lt;/a&gt;，根据&lt;a href=&#34;https://www.zhaixue.cc/makefile/makefile-intro.html&#34;&gt;Makefile&lt;/a&gt;里的指定，构建出编译可执行文件所需要的完整依赖关系。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Support and Discussions</title>
-      <link>https://baniycai.github.io/article/support-and-discussions/</link>
-      <pubDate>Mon, 01 Nov 2021 18:10:14 +0100</pubDate>
-      
-      <guid>https://baniycai.github.io/article/support-and-discussions/</guid>
-      <description>Support for this theme is provided through the Issues and Discussions sections of the project. Please use the Issues section if you would like to report a defect or bug. For any other requests, use the Discussions section.
-Please use the following guidelines if you want to start a discussion:
-For any questions regarding a specific feature, or if you need help using or customizing the theme, use the Questions &amp;amp; Answers (Q&amp;amp;A) category.</description>
     </item>
     
   </channel>
