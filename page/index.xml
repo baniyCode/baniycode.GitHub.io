@@ -1,28 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on My cool new Blog</title>
-    <link>https://baniycode.github.io/page/</link>
-    <description>Recent content in Pages on My cool new Blog</description>
+    <title>Pages on Baniy Cai</title>
+    <link>https://baniycai.github.io/page/</link>
+    <description>Recent content in Pages on Baniy Cai</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 01 Nov 2021 13:18:45 +0100</lastBuildDate><atom:link href="https://baniycode.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 May 2023 15:52:13 +0800</lastBuildDate><atom:link href="https://baniycai.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About Bilberry</title>
-      <link>https://baniycode.github.io/page/about-bilberry/</link>
+      <title>Home</title>
+      <link>https://baniycai.github.io/page/home/</link>
+      <pubDate>Sun, 14 May 2023 15:52:13 +0800</pubDate>
+      
+      <guid>https://baniycai.github.io/page/home/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Categories</title>
+      <link>https://baniycai.github.io/page/categories/</link>
+      <pubDate>Sun, 14 May 2023 14:26:57 +0800</pubDate>
+      
+      <guid>https://baniycai.github.io/page/categories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archive</title>
+      <link>https://baniycai.github.io/page/archive/</link>
+      <pubDate>Sun, 14 May 2023 13:53:37 +0800</pubDate>
+      
+      <guid>https://baniycai.github.io/page/archive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://baniycai.github.io/page/about/</link>
       <pubDate>Mon, 01 Nov 2021 13:18:45 +0100</pubDate>
       
-      <guid>https://baniycode.github.io/page/about-bilberry/</guid>
-      <description>Bilberry is a premium theme for the Hugo Static Website Builder.
-It is full of little nice features, such as:
-built-in integration for the wonderful algolia search built-in integration for the powerful disqus comments gravatar and custom image integration for the header keyboard shortcut for the search (press the s key, type something and hit enter or esc) responsive design - optimized for desktop and mobile devices full internationalization (i18n) support (en, de, fr, ru, es out of the box!</description>
+      <guid>https://baniycai.github.io/page/about/</guid>
+      <description> Baniy,资深golang开发工程师，有多年的互联网广告经验，对广告系统有深入的理解，擅长设计高并发、高可靠的系统 掌握多种开发语言，包括但不限于：golang、java、python、rust、c/c++ 对操作系统和计算机网络等底层原理有浓厚的兴趣，后续会持续输出相当的内容，分享自己掌握的知识 </description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>https://baniycode.github.io/page/github/</link>
+      <link>https://baniycai.github.io/page/github/</link>
       <pubDate>Mon, 01 Nov 2021 13:17:56 +0100</pubDate>
       
-      <guid>https://baniycode.github.io/page/github/</guid>
+      <guid>https://baniycai.github.io/page/github/</guid>
       <description></description>
     </item>
     
