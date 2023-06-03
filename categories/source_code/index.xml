@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>source_code on Baniy Cai</title>
+    <link>https://baniycai.github.io/categories/source_code/</link>
+    <description>Recent content in source_code on Baniy Cai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 03 Jun 2023 21:59:54 +0800</lastBuildDate><atom:link href="https://baniycai.github.io/categories/source_code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gin_source_code_summary</title>
+      <link>https://baniycai.github.io/article/gin_source_code_summary/</link>
+      <pubDate>Sat, 03 Jun 2023 21:59:54 +0800</pubDate>
+      
+      <guid>https://baniycai.github.io/article/gin_source_code_summary/</guid>
+      <description>前言 ​	小弟一直以来都对各种技术或框架的底层原理很感兴趣，自认为只有把这项技术的底层原理都摸透了，才能很好地驾驭这门技术，减少踩坑和犯错的可能。
+​	最近刚好想学习golang的各个web框架，了解下它们的底层以及它们之间有什么区别，所以就开始了源码之旅~~~
+​	这周的下班时间加上周末的一点点时间，大概地看了下golang源码的http包和gin web框架的大部分代码。golang源码的http包内容相对简单，且路由功能相对单一，只支持绝对匹配路由(会一点小调整啦，后面再细讲)，但对于大部分简单的场景是完全足够的啦，这里就不讲了，后面找时间再来详细说下，今天重点讲下gin框架的源码~~~
+源码解读 ​	关于gin的介绍就不说啦，网上一大堆介绍，且这篇文章的重点是讲源码，所以就直接开始源码之旅叭 (小声bb：这只是小弟的个人总结和理解，不一定对，理性看哈，而且随着知识学习的深入，后面可能还会对内容进行改进哈)
+​	感觉gin最关键的两个结构应该是Engine和Context了。Engine实现了http.Handler接口，在ServeHTTP(ResponseWriter, *Request)中接收到请求后，从Engine的methodTrees方法树中找出能处理该请求path的handlers，之后将req和res包装成Context传给该handlers进行处理，下面是gin中的hander的方法签名
+type HandlerFunc func(*Context) todo 未完待续</description>
+    </item>
+    
+  </channel>
+</rss>

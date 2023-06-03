@@ -15,18 +15,25 @@
     <title>
         
            
-               Q&amp;A &vert; Baniy Cai
+               Gin_source_code_summary &vert; Baniy Cai
            
         
     </title>
-    <meta itemprop="name" content="Q&amp;A">
-    <meta itemprop="description" content="Q&amp;A - Blog of Baniy Cai">
+    <meta itemprop="name" content="Gin_source_code_summary">
+    <meta itemprop="description" content="Gin_source_code_summary - Blog of Baniy Cai">
     <meta property="og:site_name" content="Baniy Cai">
 
-    <meta property="og:title" content="Q&amp;A" />
-<meta property="og:description" content="Blog of Baniy Cai" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://baniycai.github.io/tags/qa/" />
+    <meta property="og:title" content="Gin_source_code_summary" />
+<meta property="og:description" content="前言 ​	小弟一直以来都对各种技术或框架的底层原理很感兴趣，自认为只有把这项技术的底层原理都摸透了，才能很好地驾驭这门技术，减少踩坑和犯错的可能。
+​	最近刚好想学习golang的各个web框架，了解下它们的底层以及它们之间有什么区别，所以就开始了源码之旅~~~
+​	这周的下班时间加上周末的一点点时间，大概地看了下golang源码的http包和gin web框架的大部分代码。golang源码的http包内容相对简单，且路由功能相对单一，只支持绝对匹配路由(会一点小调整啦，后面再细讲)，但对于大部分简单的场景是完全足够的啦，这里就不讲了，后面找时间再来详细说下，今天重点讲下gin框架的源码~~~
+源码解读 ​	关于gin的介绍就不说啦，网上一大堆介绍，且这篇文章的重点是讲源码，所以就直接开始源码之旅叭 (小声bb：这只是小弟的个人总结和理解，不一定对，理性看哈，而且随着知识学习的深入，后面可能还会对内容进行改进哈)
+​	感觉gin最关键的两个结构应该是Engine和Context了。Engine实现了http.Handler接口，在ServeHTTP(ResponseWriter, *Request)中接收到请求后，从Engine的methodTrees方法树中找出能处理该请求path的handlers，之后将req和res包装成Context传给该handlers进行处理，下面是gin中的hander的方法签名
+type HandlerFunc func(*Context) todo 未完待续" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://baniycai.github.io/article/gin_source_code_summary/" /><meta property="article:section" content="article" />
+<meta property="article:published_time" content="2023-06-03T21:59:54+08:00" />
+<meta property="article:modified_time" content="2023-06-03T21:59:54+08:00" />
 
 
 
@@ -36,13 +43,10 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="https://baniycai.github.io/tags/qa/index.xml" rel="alternate" type="application/rss+xml" title="Baniy Cai" />
-    <link href="https://baniycai.github.io/tags/qa/index.xml" rel="feed" type="application/rss+xml" title="Baniy Cai" />
-    
 
 
     
-    <link rel="canonical" href="https://baniycai.github.io/tags/qa/">
+    <link rel="canonical" href="https://baniycai.github.io/article/gin_source_code_summary/">
     
 
     <link rel="stylesheet" href="https://baniycai.github.io/theme.css">
@@ -139,11 +143,9 @@
 
     <div class="main container">
         
-    
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://baniycai.github.io/article/support-and-discussions/">
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://baniycai.github.io/article/gin_source_code_summary/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -152,15 +154,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://baniycai.github.io/article/support-and-discussions/">
-            Support and Discussions
+        <a href="https://baniycai.github.io/article/gin_source_code_summary/">
+            Gin_source_code_summary
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2021-11-01</span>
+                <span class="date moment">2023-06-03</span>
             
         
 
@@ -171,95 +173,60 @@
         
 
         
-
-        
-            <span class="author">
+            <span class="categories">
                 
-                
-                    <a href="https://baniycai.github.io/author/lednerb/">Lednerb</a>
+                    
+                    
+                        <a href="https://baniycai.github.io/categories/source_code/">source_code</a>
+                    
                 
             </span>
+        
+
         
     </div>
 
     
         
 
-        <p>Support for this theme is provided through the <a href="https://github.com/Lednerb/bilberry-hugo-theme/issues">Issues</a> and <a href="https://github.com/Lednerb/bilberry-hugo-theme/discussions">Discussions</a> sections of the project.
-Please use the <strong>Issues</strong> section if you would like to report a defect or bug. For any other requests, use the <strong>Discussions</strong> section.</p>
-<p>Please use the following guidelines if you want to start a discussion:</p>
-<ul>
-<li>For any questions regarding a specific feature, or if you need help using or customizing the theme, use the <strong>Questions &amp; Answers</strong> (Q&amp;A) category.</li>
-<li>For a new feature or any other improvements, use the <strong>Ideas</strong> category.</li>
-<li>To showcase your blog or website powered by Bilberry theme, use the <strong>Show and tell</strong> category.</li>
-<li>For any other inquiries, please use the <strong>General</strong> type discussion.</li>
-</ul>
+        <h2 id="前言">前言</h2>
+<p>​	小弟一直以来都对各种技术或框架的底层原理很感兴趣，自认为只有把这项技术的底层原理都摸透了，才能很好地驾驭这门技术，减少踩坑和犯错的可能。</p>
+<p>​	最近刚好想学习golang的各个web框架，了解下它们的底层以及它们之间有什么区别，所以就开始了源码之旅~~~</p>
+<p>​	这周的下班时间加上周末的一点点时间，大概地看了下golang源码的http包和gin web框架的大部分代码。golang源码的http包内容相对简单，且路由功能相对单一，只支持绝对匹配路由(会一点小调整啦，后面再细讲)，但对于大部分简单的场景是完全足够的啦，这里就不讲了，后面找时间再来详细说下，今天重点讲下gin框架的源码~~~</p>
+<h2 id="源码解读">源码解读</h2>
+<p>​	关于gin的介绍就不说啦，网上一大堆介绍，且这篇文章的重点是讲源码，所以就直接开始源码之旅叭 (小声bb：这只是小弟的个人总结和理解，不一定对，理性看哈，而且随着知识学习的深入，后面可能还会对内容进行改进哈)</p>
+<p>​	感觉gin最关键的两个结构应该是Engine和Context了。Engine实现了http.Handler接口，在ServeHTTP(ResponseWriter, *Request)中接收到请求后，从Engine的methodTrees方法树中找出能处理该请求path的handlers，之后将req和res包装成Context传给该handlers进行处理，下面是gin中的hander的方法签名</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">HandlerFunc</span> <span style="color:#66d9ef">func</span>(<span style="color:#f92672">*</span><span style="color:#a6e22e">Context</span>)
+</span></span></code></pre></div><p>todo 未完待续</p>
 
     
 </div>
 
     
-<div class="footer">
+<div class="footer no-tags">
 
 
     
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://baniycai.github.io/tags/support/">Support</a>
-                    
-                
-                    
-                    
-                    <a href="https://baniycai.github.io/tags/discussions/">Discussions</a>
-                    
-                
-                    
-                    
-                
-                    
-                    
-                    <a href="https://baniycai.github.io/tags/ideas/">Ideas</a>
-                    
-                
-                    
-                    
-                    <a href="https://baniycai.github.io/tags/show-and-tell/">Show and tell</a>
-                    
-                
-            </div>
-        </div>
-    
 
-    
-    <div class="languages">
-        <i class="fa fa-language"></i>
-        <div class="links">
-            
-                <a href="https://baniycai.github.io/de/article/support-and-discussions/">de</a>
-            
-        </div>
-    </div>
     
 </div>
 
 </article>
 
-            
-        </div>
-    
-
-    
-    <div class="paginator">
-        
-
         
     </div>
 
+    
+        <div id="comments-container">
+            
+            
 
+            
+
+            
+
+        </div>
+    
 
     </div>
 
@@ -377,9 +344,6 @@ Please use the <strong>Issues</strong> section if you would like to report a def
 
 <div class="credits">
     <div class="container">
-
-
-
 
 
 
