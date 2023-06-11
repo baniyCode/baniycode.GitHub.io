@@ -14,6 +14,51 @@
     <loc>https://baniycai.github.io/page/about/</loc>
     <lastmod>2021-11-01T13:18:45+01:00</lastmod>
   </url><url>
+    <loc>https://baniycai.github.io/status/unicode_utf8_ascii/</loc>
+    <lastmod>2023-06-11T11:47:10+08:00</lastmod>
+  </url><url>
+    <loc>https://baniycai.github.io/</loc>
+    <lastmod>2023-06-11T11:47:10+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://baniycai.github.io/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://baniycai.github.io/"
+                />
+  </url><url>
+    <loc>https://baniycai.github.io/status/</loc>
+    <lastmod>2023-06-11T11:47:10+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://baniycai.github.io/de/status/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://baniycai.github.io/status/"
+                />
+  </url><url>
+    <loc>https://baniycai.github.io/tags/</loc>
+    <lastmod>2023-06-11T11:47:10+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://baniycai.github.io/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://baniycai.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://baniycai.github.io/tags/%E9%9A%8F%E5%BF%83%E8%AE%B0/</loc>
+    <lastmod>2023-06-11T11:47:10+08:00</lastmod>
+  </url><url>
     <loc>https://baniycai.github.io/article/</loc>
     <lastmod>2023-06-03T21:59:54+08:00</lastmod>
     <xhtml:link
@@ -25,19 +70,6 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://baniycai.github.io/article/"
-                />
-  </url><url>
-    <loc>https://baniycai.github.io/</loc>
-    <lastmod>2023-06-03T21:59:54+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://baniycai.github.io/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://baniycai.github.io/"
                 />
   </url><url>
     <loc>https://baniycai.github.io/categories/</loc>
@@ -66,35 +98,6 @@
     <lastmod>2023-05-15T21:15:17+08:00</lastmod>
   </url><url>
     <loc>https://baniycai.github.io/categories/java/</loc>
-    <lastmod>2023-05-15T21:15:17+08:00</lastmod>
-  </url><url>
-    <loc>https://baniycai.github.io/status/</loc>
-    <lastmod>2023-05-15T21:15:17+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://baniycai.github.io/de/status/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://baniycai.github.io/status/"
-                />
-  </url><url>
-    <loc>https://baniycai.github.io/tags/</loc>
-    <lastmod>2023-05-15T21:15:17+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://baniycai.github.io/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://baniycai.github.io/tags/"
-                />
-  </url><url>
-    <loc>https://baniycai.github.io/tags/%E9%9A%8F%E5%BF%83%E8%AE%B0/</loc>
     <lastmod>2023-05-15T21:15:17+08:00</lastmod>
   </url><url>
     <loc>https://baniycai.github.io/article/makefile_intro/</loc>

@@ -5,7 +5,20 @@
     <link>https://baniycai.github.io/status/</link>
     <description>Recent content in Statuses on Baniy Cai</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 May 2023 21:15:17 +0800</lastBuildDate><atom:link href="https://baniycai.github.io/status/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Jun 2023 11:47:10 +0800</lastBuildDate><atom:link href="https://baniycai.github.io/status/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://baniycai.github.io/status/unicode_utf8_ascii/</link>
+      <pubDate>Sun, 11 Jun 2023 11:47:10 +0800</pubDate>
+      
+      <guid>https://baniycai.github.io/status/unicode_utf8_ascii/</guid>
+      <description>Unicode、UTF-8和ASCII的区别是什么？
+Unicode是一种字符集，它定义了每个字符的唯一编号，也就是所谓的“码点”。Unicode码点是一个以“U+”开头的十六进制数字，例如，英文字母“A”的Unicode码点为U+0041，中文汉字“好”的Unicode码点为U+597D。
+UTF-8是一种基于Unicode字符集实现的可变长度的字符编码方式。在UTF-8中，一个字符可以由1到4个字节组成，具体使用多少个字节取决于字符的码点大小。
+ASCII字符集是一种使用7位（即128个代码）来表示字符的编码方式，它定义了从0到127共128个字符的编码，包括26个英文字母、数字、标点符号和一些控制字符等。Unicode字符集包含了ASCII字符集中所有的字符，并且将它们的编码与ASCII字符集完全一致。也就是说，ASCII字符集中的每个字符在Unicode字符集中都有相同的码点和编码方式。Unicode字符集也被称为ASCII的超集。
+总的来说，Unicode是一个字符集，而UTF-8是一个编码方式，Unicode定义了如何表示字符的抽象概念，而UTF-8则定义了如何将字符编码为计算机能够处理的数据。Unicode这个字符集又包含ASCII字符集</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://baniycai.github.io/status/c/c&#43;&#43;_vs_other_programming_language/</link>
