@@ -268,64 +268,6 @@
     <loc>https://baniycai.github.io/categories/travelling/</loc>
     <lastmod>2021-11-01T18:01:26+01:00</lastmod>
   </url><url>
-    <loc>https://baniycai.github.io/tags/kilez-more/</loc>
-    <lastmod>2021-11-01T16:23:40+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://baniycai.github.io/de/tags/kilez-more/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://baniycai.github.io/tags/kilez-more/"
-                />
-  </url><url>
-    <loc>https://baniycai.github.io/video/kilez-more-leben-und-tod-des-imperialismus/</loc>
-    <lastmod>2021-11-01T16:23:40+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://baniycai.github.io/de/video/kilez-more-leben-und-tod-des-imperialismus/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://baniycai.github.io/video/kilez-more-leben-und-tod-des-imperialismus/"
-                />
-  </url><url>
-    <loc>https://baniycai.github.io/categories/music/</loc>
-    <lastmod>2021-11-01T16:23:40+01:00</lastmod>
-  </url><url>
-    <loc>https://baniycai.github.io/categories/politics/</loc>
-    <lastmod>2021-11-01T16:23:40+01:00</lastmod>
-  </url><url>
-    <loc>https://baniycai.github.io/categories/video/</loc>
-    <lastmod>2021-11-01T16:23:40+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://baniycai.github.io/de/categories/video/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://baniycai.github.io/categories/video/"
-                />
-  </url><url>
-    <loc>https://baniycai.github.io/video/</loc>
-    <lastmod>2021-11-01T16:23:40+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://baniycai.github.io/de/video/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://baniycai.github.io/video/"
-                />
-  </url><url>
     <loc>https://baniycai.github.io/audio/</loc>
     <lastmod>2021-11-01T16:12:47+01:00</lastmod>
     <xhtml:link
@@ -337,6 +279,19 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://baniycai.github.io/audio/"
+                />
+  </url><url>
+    <loc>https://baniycai.github.io/tags/kilez-more/</loc>
+    <lastmod>2021-11-01T16:12:47+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://baniycai.github.io/de/tags/kilez-more/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://baniycai.github.io/tags/kilez-more/"
                 />
   </url><url>
     <loc>https://baniycai.github.io/audio/kilez-more-new-world-order/</loc>
@@ -351,6 +306,9 @@
                 hreflang="cn"
                 href="https://baniycai.github.io/audio/kilez-more-new-world-order/"
                 />
+  </url><url>
+    <loc>https://baniycai.github.io/categories/music/</loc>
+    <lastmod>2021-11-01T16:12:47+01:00</lastmod>
   </url><url>
     <loc>https://baniycai.github.io/tags/truth-rap/</loc>
     <lastmod>2021-11-01T16:12:47+01:00</lastmod>
