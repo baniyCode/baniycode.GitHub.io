@@ -4,10 +4,25 @@
     <link>https://baniycai.github.io/</link>
     <description>Recent content on Baniy Cai</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 11 Jun 2023 11:47:10 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 Nov 2023 23:19:44 +0800</lastBuildDate>
     
         <atom:link href="https://baniycai.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS S3 &#43; CloudFront</title>
+      <link>https://baniycai.github.io/article/aws_cloudfront/</link>
+      <pubDate>Fri, 03 Nov 2023 23:19:44 +0800</pubDate>
+      
+      <guid>https://baniycai.github.io/article/aws_cloudfront/</guid>
+      <description>快速、大规模地存储和分发内容 ​	如果你有一个网站、应用程序或其他web资源，那么你可能会有静态资源。静态资源包括图像、视频或音乐等文件，还包括像 .css 或 js 等脚本文件。在云服务还未流行的时代，你可以将这些文件放在服务器上，然后通过互联网将它们提供给全球某个特定地理位置的所有受众。但有了云服务，就有一种解决方案可以提供更快的交付和更好的可扩展性。在这篇博客中，你将了解如何使用 Amazon Simple Storage Service (S3) 和 Amazon CloudFront 大规模存储、保护和交付你的静态资源。
+​	第一步是以安全且可扩展的方式存储你的资源。对于你想要在互联网上提供的静态资源，一种简单而灵活的方法是将其存储在 Amazon S3“存储桶”中。 S3 易于设置和使用，旨在从互联网上的任何位置存储和检索任意数量的文件或对象。它使用简单，并以低成本提供持久、高度可用且可扩展的数据存储。
+​	当你将资源放入云中的 S3 存储桶时，很多事情都会变得更加容易。首先，你无需规划和分配特定数量的存储空间，因为 S3 存储桶会自动扩展。此外，由于S3是serverless(无服务器)服务，因此你无需自己管理存储文件的服务器；你只需放置并获取你的内容。最后，即使你的应用程序需要服务器（例如，因为你有动态应用程序），服务器也可以更加简单，因为它不必处理静态内容的请求。
+​	使用 S3 存储静态资源有很多优点。但为了帮助优化应用程序的性能和安全性，同时有效管理成本，Aws官方建议同时设置 Amazon CloudFront 以与 S3 存储桶配合使用，以提供和保护内容。 CloudFront 是一项内容交付网络 (content delivery network,CDN) 服务，可在全球范围内安全、大规模地交付静态和动态 Web 内容、视频流和 APIs。按照设计，从 CloudFront 交付数据比从 S3 直接向用户交付数据更节省成本。
+​	CloudFront 通过称为边缘位置(Edge Locations)的全球数据中心网络提供内容。使用边缘服务器缓存和提供内容，通过提供更靠近查看者所在位置的内容来提高性能。 CloudFront 在世界各地都有边缘服务器，如下图所示：
+​	当用户请求你通过 CloudFront 提供的内容时，他们的请求将被路由到附近的边缘站点。如果 CloudFront 具有所请求文件的缓存副本，CloudFront 会将其传送给用户，从而提供快速响应。如果他们请求的文件尚未缓存，CloudFront 会从你的文件来源检索该文件 - 例如，你存储内容的 S3 存储桶。然后，对于相同内容的下一个本地请求，它已经在附近缓存并且可以立即提供服务。
+​	通过在边缘位置缓存你的内容，CloudFront 可以减少 S3 存储桶上的负载，并有助于确保用户在请求内容时获得更快的响应。此外，使用 CloudFront 传出内容数据通常比直接从 S3 提供文件更具成本效益，而且从 S3 到 CloudFront 无需支付数据传输费用。你只需支付从 CloudFront 传送到互联网的内容，以及请求费用。</description>
+    </item>
     
     <item>
       <title></title>
