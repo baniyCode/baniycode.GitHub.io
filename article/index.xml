@@ -5,7 +5,19 @@
     <link>https://baniycai.github.io/article/</link>
     <description>Recent content in Articles on Baniy Cai</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Nov 2023 23:19:44 +0800</lastBuildDate><atom:link href="https://baniycai.github.io/article/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Nov 2023 17:17:19 +0800</lastBuildDate><atom:link href="https://baniycai.github.io/article/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>项目中关于Go字符串拼接的一些思考</title>
+      <link>https://baniycai.github.io/article/go_string_splice/</link>
+      <pubDate>Mon, 20 Nov 2023 17:17:19 +0800</pubDate>
+      
+      <guid>https://baniycai.github.io/article/go_string_splice/</guid>
+      <description>实际场景 ​	今天在review我们两个核心项目代码的时候，发现项目中大量调用了fmt.Sprintf方法，即使是简单的两个字符串的拼接(没有任何分隔符)也使用了这个方法，对于一个接近疯狂的代码性能追求党，怎么能容忍这种代码的存在呢！！！
+ps：两个项目，一个是实时项目，业务相对比较简单，接收外部请求，进行各种过滤后返回广告素材相关信息，请求响应时间不能超过1s，该项目暂称为F(fast)；一个是收数的项目，业务相对比较复杂，同样是接收外部请求，但是返回一个响应码就行，而且对响应时间没有太大的要求，基本是有响应就行，该项目暂称为S(slow)
+​	转头一想，性能优化也是要做权衡考虑的，不是说性能最高的代码就是最好的代码，还要结合实际场景来考虑！我们知道，fmt.Sprintf()方法主要是用来做字符串的拼接，比如说redisKey := fmt.Sprintf(&amp;quot;%d_%d_%d&amp;quot;, planId, itemId, unit)，这样的代码比起简单地使用+操作符来实现，可读性高了很多。但是，往往没有十全十美的方案，可读性的提升带来的是性能的降低。废话不多说，上基准测试！！！
+package main import ( &amp;#34;testing&amp;#34; &amp;#34;fmt&amp;#34; ) // 使用 + 操作符拼接字符串 func concatWithPlusOperator(a, b string) string { return a + b } // 使用 fmt.Printf 拼接字符串 func concatWithPrintf(a, b string) string { return fmt.Sprintf(&amp;#34;%s%s&amp;#34;, a, b) } // 基准测试函数 func BenchmarkStringConcatenation(b *testing.B) { a := &amp;#34;Hello&amp;#34; benchmarkCases := []struct { name string concat func(string, string) string }{ {&amp;#34;PlusOperator&amp;#34;, concatWithPlusOperator}, {&amp;#34;Printf&amp;#34;, concatWithPrintf}, } for _, bm := range benchmarkCases { b.</description>
+    </item>
+    
     <item>
       <title>AWS S3 &#43; CloudFront</title>
       <link>https://baniycai.github.io/article/aws_cloudfront/</link>

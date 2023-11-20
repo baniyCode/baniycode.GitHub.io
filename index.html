@@ -159,6 +159,90 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://baniycai.github.io/article/go_string_splice/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://baniycai.github.io/article/go_string_splice/">
+            项目中关于Go字符串拼接的一些思考
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2023-11-20</span>
+            
+        
+
+        
+            
+                <span class="readingTime">3 min read</span>
+            
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://baniycai.github.io/categories/go/">Go</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        实际场景 ​	今天在review我们两个核心项目代码的时候，发现项目中大量调用了fmt.Sprintf方法，即使是简单的两个字符串的拼接(没有任何分隔符)也使用了这个方法，对于一个接近疯狂的代码性能追求党，怎么能容忍这种代码的存在呢！！！
+ps：两个项目，一个是实时项目，业务相对比较简单，接收外部请求，进行各种过滤后返回广告素材相关信息，请求响应时间不能超过1s，该项目暂称为F(fast)；一个是收数的项目，业务相对比较复杂，同样是接收外部请求，但是返回一个响应码就行，而且对响应时间没有太大的要求，基本是有响应就行，该项目暂称为S(slow)
+​	转头一想，性能优化也是要做权衡考虑的，不是说性能最高的代码就是最好的代码，还要结合实际场景来考虑！我们知道，fmt.Sprintf()方法主要是用来做字符串的拼接，比如说redisKey := fmt.Sprintf(&quot;%d_%d_%d&quot;, planId, itemId, unit)，这样的代码比起简单地使用+操作符来实现，可读性高了很多。但是，往往没有十全十美的方案，可读性的提升带来的是性能的降低。废话不多说，上基准测试！！！
+package main import ( &#34;testing&#34; &#34;fmt&#34; ) // 使用 + 操作符拼接字符串 func concatWithPlusOperator(a, b string) string { return a + b } // 使用 fmt.Printf 拼接字符串 func concatWithPrintf(a, b string) string { return fmt.Sprintf(&#34;%s%s&#34;, a, b) } // 基准测试函数 func BenchmarkStringConcatenation(b *testing.B) { a := &#34;Hello&#34; benchmarkCases := []struct { name string concat func(string, string) string }{ {&#34;PlusOperator&#34;, concatWithPlusOperator}, {&#34;Printf&#34;, concatWithPrintf}, } for _, bm := range benchmarkCases { b.
+
+        
+            <a href="https://baniycai.github.io/article/go_string_splice/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://baniycai.github.io/tags/go/">Go</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://baniycai.github.io/article/aws_cloudfront/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -703,139 +787,6 @@ Please use the <strong>Issues</strong> section if you would like to report a def
 
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://baniycai.github.io/gallery/my-trip-to-scotland/">
-    <i class="fas fa-fw fa-camera"></i>
-</a>
-
-<article class="gallery">
-    
-
-    
-        <div class="flexslider">
-            <ul class="slides">
-                
-                    
-                        <li><img alt="My Trip to Scotland" src="/gallery/my-trip-to-scotland/scotland1_hu92019f4794a0544a3ad4410e554ad3af_67831_700x350_fill_q95_box_smart1.jpg" /></li>
-                    
-                        <li><img alt="My Trip to Scotland" src="/gallery/my-trip-to-scotland/scotland2_hud2b2cd68da7f6388575395354a188425_35351_700x350_fill_q95_box_smart1.jpg" /></li>
-                    
-                        <li><img alt="My Trip to Scotland" src="/gallery/my-trip-to-scotland/scotland3_hu85c54f52b5fe4dbca0189cd47269771e_50040_700x350_fill_q95_box_smart1.jpg" /></li>
-                    
-                        <li><img alt="My Trip to Scotland" src="/gallery/my-trip-to-scotland/scotland4_hu1c4902c66176c948fd8516244d69cc1e_56034_700x350_fill_q95_box_smart1.jpg" /></li>
-                    
-                        <li><img alt="My Trip to Scotland" src="/gallery/my-trip-to-scotland/scotland5_hu5ddc646a14d071d83d62e36cc9a8eba6_46028_700x350_fill_q95_box_smart1.jpg" /></li>
-                    
-                
-            </ul>
-        </div>
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://baniycai.github.io/gallery/my-trip-to-scotland/">
-            My Trip to Scotland
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-11-01</span>
-            
-        
-
-        
-            
-                <span class="readingTime">1 min read</span>
-            
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://baniycai.github.io/categories/travelling/">Travelling</a>
-                    
-                
-                    
-                    
-                        <a href="https://baniycai.github.io/categories/holidays/">Holidays</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://baniycai.github.io/author/lednerb/">Lednerb</a>
-                
-            </span>
-        
-    </div>
-
-    
-        In June 2017 I&rsquo;ve visited Scotland with my best friend for two weeks. We drove a lot through the beautiful countryside and saw a lot of different animals: cattle, deer, birds, dolphins, and sheep. Sheep everywhere!
-At one beautiful camping site, we saw cattle in fog in the very early morning and took a picture of it. The image now has the title &ldquo;Rindviecher im Nebel&rdquo;, a quite funny German phrase that means cattle in the fog.
-
-        
-            <a href="https://baniycai.github.io/gallery/my-trip-to-scotland/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://baniycai.github.io/tags/scotland/">Scotland</a>
-                    
-                
-                    
-                    
-                    <a href="https://baniycai.github.io/tags/glennfinnan-viaduct/">Glennfinnan Viaduct</a>
-                    
-                
-                    
-                    
-                    <a href="https://baniycai.github.io/tags/eilean-donan-castle/">Eilean Donan Castle</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-    <div class="languages">
-        <i class="fa fa-language"></i>
-        <div class="links">
-            
-                <a href="https://baniycai.github.io/de/gallery/my-trip-to-scotland/">de</a>
-            
-        </div>
-    </div>
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-
-    
 
     
     <div class="paginator">
@@ -861,6 +812,10 @@ At one beautiful camping site, we saw cattle in fog in the very early morning an
                 
                 
                     <li>
+                        <a href="https://baniycai.github.io/article/go_string_splice/">项目中关于Go字符串拼接的一些思考</a>
+                    </li>
+                
+                    <li>
                         <a href="https://baniycai.github.io/article/aws_cloudfront/">AWS S3 &#43; CloudFront</a>
                     </li>
                 
@@ -880,10 +835,6 @@ At one beautiful camping site, we saw cattle in fog in the very early morning an
                         <a href="https://baniycai.github.io/gallery/my-trip-to-scotland/">My Trip to Scotland</a>
                     </li>
                 
-                    <li>
-                        <a href="https://baniycai.github.io/audio/kilez-more-new-world-order/">Kilez More - New World Order</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -895,6 +846,12 @@ At one beautiful camping site, we saw cattle in fog in the very early morning an
             
 
             <ul>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/go/">Go (2)</a>
+                
+                </li>
                 
                 <li>
                 
@@ -917,12 +874,6 @@ At one beautiful camping site, we saw cattle in fog in the very early morning an
                 <li>
                 
                     <a href="https://baniycai.github.io/categories/code/">Code (1)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://baniycai.github.io/categories/go/">Go (1)</a>
                 
                 </li>
                 
