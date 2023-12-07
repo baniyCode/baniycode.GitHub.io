@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+
+  
+<html itemscope itemtype="https://schema.org/WebPage" class="no-js" lang="cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://baniycai.github.io/">
+    <meta name="author" content="Baniy Cai">
+    <meta name="description" content="Blog of Baniy Cai">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.105.0">
+    <title>
+        
+           
+               database &vert; Baniy Cai
+           
+        
+    </title>
+    <meta itemprop="name" content="database">
+    <meta itemprop="description" content="database - Blog of Baniy Cai">
+    <meta property="og:site_name" content="Baniy Cai">
+
+    <meta property="og:title" content="database" />
+<meta property="og:description" content="Blog of Baniy Cai" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://baniycai.github.io/tags/database/" />
+
+
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="https://baniycai.github.io/tags/database/index.xml" rel="alternate" type="application/rss+xml" title="Baniy Cai" />
+    <link href="https://baniycai.github.io/tags/database/index.xml" rel="feed" type="application/rss+xml" title="Baniy Cai" />
+    
+
+
+    
+    <link rel="canonical" href="https://baniycai.github.io/tags/database/">
+    
+
+    <link rel="stylesheet" href="https://baniycai.github.io/theme.css">
+
+    
+
+    
+        
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+    
+
+    
+    <nav class="permanentTopNav sticky">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/" target="">Home</a></li>
+                
+            
+                
+                    <li><a href="/categories" target="">Categories</a></li>
+                
+            
+                
+                    <li><a href="/archive/" target="">Archive</a></li>
+                
+            
+                
+                    <li><a href="https://baniycai.github.io/page/about/">About</a></li>
+                
+            
+                
+                    <li><a href="https://github.com/baniycai/" target="_blank">Github</a></li>
+                
+            
+        </ul>
+
+        
+            <div id="search-box" class="search">
+                <i class="fas fa-search"></i>
+                <input id="search" type="text" placeholder="Search ...">
+            </div>
+        
+    </div>
+</nav>
+
+
+    
+    <header class="sticky">
+
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo">
+                
+                    
+                    
+                        
+                    
+                    <img src="https://seccdn.libravatar.org/avatar/87522108b277500e11a4a5aa3d8c6c58?d=mm&size=200" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+                <a href="/">
+                    Baniy Cai
+                </a>
+            </h3>
+
+            
+                <span class="subtitle">Welcome! This is the blog of baniy.</span>
+            
+        </div>
+
+        
+
+        
+            <div class="toggler permanentTopNav">
+        
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+    </div>
+</header>
+
+
+    <div class="main container">
+        
+    
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://baniycai.github.io/article/database_crash/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://baniycai.github.io/article/database_crash/">
+            数据库崩溃时会发生什么？
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2023-12-07</span>
+            
+        
+
+        
+            
+                <span class="readingTime">1 min read</span>
+            
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://baniycai.github.io/categories/database/">database</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        数据库将表和索引存储在文件中。当我们创建行时，数据库系统会写入内存中的数据页(data pages)，然后将其写入磁盘上的数据文件。
+这里就产生一个问题辽，如果数据库写入文件中途断电了怎么办？我们需要其它东西来避免崩溃和断电，那就是 WAL(Write-ahead log，预写日志)或重做日志(Redo log)。
+当我们写入表和索引时，我们会在这些更改的 WAL 中创建一个日志条目。我们将 WAL 写入它自己的文件，同时也写入内存中的数据页。不写入磁盘上的实际表和索引数据文件是可以的，这些可以保留在内存中，只要我们有日志，我们就可以随时构建表。
+WAL 比实际数据文件小得多，因此我们可以相对更快地刷新它们。与随机的数据页更改不同，它们是连续的。引用 Yugabyte 的 Hari 的话
+WAL 不仅更小，而且需要更少的 IO。即使其中只有一个bit发生变化，您也必须将整个扇区写入磁盘。 WAL 是仅追加(append only)，您只能写入到文件末尾。如果修改 4 行，数据可能位于 4 个扇区中，但可能只需要 1 个 WAL 扇区。
+即使您写入多个 WAL 扇区，它们也是连续的，这比随机 IO 更快。主轴驱动器的优势是巨大的，但即使在 SSD 上，它的速度也更快。
+WAL 还可以用于各种用途，例如复制和备份以及崩溃恢复。
+如果我们在写入 WAL 时崩溃了怎么办？没错，这就是我们有事务状态的原因。写入 WAL 条目后可能会崩溃，但这没关系，只要我们知道属于每个 WAL 条目的事务状态，我们就可以在恢复时丢弃或忽略未提交的 WAL 条目。
+例如，如果我们正处于事务过程中并且数据库崩溃了，我们默认会认为该事务已回滚，因此由该未提交事务刷新的 WAL 条目将被丢弃。
+但是，如果我们能够发出 COMMIT 并且事务提交的 WAL 条目将其写入磁盘并且客户端获得一个成功的反馈，则即使我们立即崩溃，该事务也会被视为已提交。
+因此，我们已经确定 WAL 是事实来源，当我们在数据文件之前写入时，我们当然会将更改写入内存中的数据页（以便正在进行的事务使用最新的数据页），但我们会延迟刷新数据页数据页写入磁盘，因为 WAL 已将其写入磁盘。
+现在，我们的磁盘上的数据文件与内存中的数据文件不同步，这绝对没问题。只要数据库正在运行，我们就只会从内存中读取最新的数据，但如果我们确实崩溃了，那就是一个问题。
+当数据库开始备份时，文件已过时，我们不能只是将其拉到内存中并让客户端读取它们，WAL 是事实来源，我们需要将 WAL 中的更改重做回数据文件上，并且在此过程中不允许读取任何内容（否则我们会损坏）。数据文件与 WAL 的不同步程度越高（发生了多次写入，但数据文件很长时间没有更新），数据库启动时间就越慢。
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://baniycai.github.io/tags/database/">database</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+
+    
+    <div class="paginator">
+        
+
+        
+    </div>
+
+
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://baniycai.github.io/article/database_crash/">数据库崩溃时会发生什么？</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://baniycai.github.io/article/go_string_splice/">项目中关于Go字符串拼接的一些思考</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://baniycai.github.io/article/aws_cloudfront/">AWS S3 &#43; CloudFront</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://baniycai.github.io/article/gin_source_code_summary/">Gin_source_code_summary</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://baniycai.github.io/article/makefile_intro/">MakeFile介绍</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://baniycai.github.io/article/support-and-discussions/">Support and Discussions</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            
+            <a href="https://baniycai.github.io/categories/"><strong>Categories</strong></a>
+            
+
+            <ul>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/go/">Go (2)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/privacy/">Privacy (2)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/aws/">Aws (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/c/c&#43;&#43;/">C/C&#43;&#43; (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/code/">Code (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://baniycai.github.io/categories/database/">database (1)</a>
+                
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+                
+                <a href="" target="_blank" rel="me"><em class="fab fa-twitter"></em></a>
+                
+                <a href="https://github.com/baniycai/" target="_blank" rel=""><em class="fab fa-github"></em></a>
+                
+            </div>
+            
+
+            
+
+            
+            <div class="archive">
+                
+                <a href="https://baniycai.github.io/archive/"><strong>Archive</strong></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+    
+
+    
+    <script src="https://baniycai.github.io/theme.js"></script>
+    
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="AM9TETHNHE">
+  <input type="hidden" id="algolia-search-apiKey" value="afc71dae381644b127579526c553c888">
+  <input type="hidden" id="algolia-search-indexName" value="blog_index">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+</div>
+
+    
+
+    
+</body>
+
+</html>
