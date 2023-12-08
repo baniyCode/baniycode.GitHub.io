@@ -4,10 +4,20 @@
     <link>https://baniycai.github.io/</link>
     <description>Recent content on Baniy Cai</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 07 Dec 2023 16:54:34 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 Dec 2023 17:32:43 +0800</lastBuildDate>
     
         <atom:link href="https://baniycai.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何设计一个高性能的幂等性API</title>
+      <link>https://baniycai.github.io/article/design_idempotency_api/</link>
+      <pubDate>Fri, 08 Dec 2023 17:32:43 +0800</pubDate>
+      
+      <guid>https://baniycai.github.io/article/design_idempotency_api/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;幂等性 API 意味着使用相同的请求体或参数，无论成功调用了多少次API，数据/系统状态都将保持相同。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>数据库崩溃时会发生什么？</title>
