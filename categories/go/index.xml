@@ -5,7 +5,18 @@
     <link>https://baniycai.github.io/categories/go/</link>
     <description>Recent content in Go on Baniy Cai</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Nov 2023 17:17:19 +0800</lastBuildDate><atom:link href="https://baniycai.github.io/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Dec 2023 16:06:33 +0800</lastBuildDate><atom:link href="https://baniycai.github.io/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>你的 Go 应用有使用正确的 CPU 核数吗？</title>
+      <link>https://baniycai.github.io/article/go_cpu_num_setting/</link>
+      <pubDate>Wed, 27 Dec 2023 16:06:33 +0800</pubDate>
+      
+      <guid>https://baniycai.github.io/article/go_cpu_num_setting/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/baniycai/picture-bed/main/2023/12/c_20231227_1703660603.png&#34; alt=&#34;image-20231227150323340&#34;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;在现代云原生语言领域，Go 因其并发支持和通过 goroutine 实现的效率而广受欢迎。然而，在如何使用合适数量的 CPU 核心这个问题上，Go 应用程序面临一些挑战。本文我们探讨了根本问题，并说明了为什么 Go 应用程序可能无法使用正确数量的 CPU 核心，特别是在 Kubernetes 等容器化环境中。
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
     <item>
       <title>项目中关于Go字符串拼接的一些思考</title>
       <link>https://baniycai.github.io/article/go_string_splice/</link>
